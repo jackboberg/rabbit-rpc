@@ -12,5 +12,8 @@
     "amqplib"
   ],
   "author": "Jack Boberg <jack.boberg@progress.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "amqplib": "0.4.1"
+  }
 }

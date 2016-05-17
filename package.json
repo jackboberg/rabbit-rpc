@@ -1,7 +1,7 @@
 {
-  "name": "@modulus/rabbit",
+  "name": "@modulus/rabbit-rpc",
   "version": "0.0.0",
-  "description": "amqplib wrapper for easier rabbitmq scripting",
+  "description": "amqplib wrapper for easier rabbitmq scripting of RPC interface",
   "main": "index.js",
   "scripts": {
     "coverage": "lab -r html -o coverage/index.html -r lcov -o coverage/lcov.info",

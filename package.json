@@ -4,9 +4,10 @@
   "description": "amqplib wrapper for easier rabbitmq scripting",
   "main": "index.js",
   "scripts": {
+    "coverage": "lab -r html -o coverage/index.html -r lcov -o coverage/lcov.info",
     "lint": "mod-standard",
     "pretest": "npm run lint",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "lab -cl"
   },
   "keywords": [
     "rabbitmq",

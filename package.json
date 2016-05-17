@@ -16,5 +16,8 @@
   "dependencies": {
     "amqplib": "0.4.1",
     "uuid": "2.0.2"
+  },
+  "devDependencies": {
+    "@modulus/standard": "0.5.1"
   }
 }

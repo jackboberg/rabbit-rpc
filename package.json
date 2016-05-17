@@ -9,13 +9,23 @@
     "pretest": "npm run lint",
     "test": "lab -cl"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/onmodulus/rabbit-rpc.git"
+  },
   "keywords": [
-    "rabbitmq",
     "amqp",
-    "amqplib"
+    "amqplib",
+    "rabbit",
+    "rabbitmq",
+    "rpc"
   ],
   "author": "Jack Boberg <jack.boberg@progress.com>",
   "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/onmodulus/rabbit-rpc/issues"
+  },
+  "homepage": "https://github.com/onmodulus/rabbit-rpc#readme",
   "dependencies": {
     "amqplib": "0.4.1",
     "uuid": "2.0.2"

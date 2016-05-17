@@ -4,6 +4,8 @@
   "description": "amqplib wrapper for easier rabbitmq scripting",
   "main": "index.js",
   "scripts": {
+    "lint": "mod-standard",
+    "pretest": "npm run lint",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [

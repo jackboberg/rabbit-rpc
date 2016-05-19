@@ -33,6 +33,6 @@
   "devDependencies": {
     "@modulus/standard": "0.5.1",
     "code": "1.5.0",
-    "lab": "6.2.0"
+    "lab": "10.6.0"
   }
 }

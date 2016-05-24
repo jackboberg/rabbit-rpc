@@ -35,6 +35,6 @@
     "@modulus/standard": "0.5.1",
     "code": "1.5.0",
     "greenkeeper-postpublish": "1.0.0",
-    "lab": "6.2.0"
+    "lab": "10.7.0"
   }
 }

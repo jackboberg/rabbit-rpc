@@ -29,6 +29,7 @@
   "homepage": "https://github.com/onmodulus/rabbit-rpc#readme",
   "dependencies": {
     "amqplib": "0.4.1",
+    "serialize-error": "2.0.0",
     "uuid": "2.0.2"
   },
   "devDependencies": {

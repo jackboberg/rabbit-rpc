@@ -1,4 +1,7 @@
 language: node_js
+sudo: required
+services:
+  - docker
 cache:
   directories:
     - node_modules
@@ -7,6 +10,9 @@ notifications:
 node_js:
   - '8'
   - '6'
+before_install:
+  - 'docker pull rabbitmq:management'
+  - './test/bin/rabbit'
 before_script:
   - npm prune
 branches:

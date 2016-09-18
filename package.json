@@ -30,7 +30,7 @@
   "dependencies": {
     "@modulus/rabbit-channel": "1.0.0",
     "serialize-error": "2.0.0",
-    "uuid": "2.0.2"
+    "uuid": "2.0.3"
   },
   "devDependencies": {
     "@modulus/standard": "0.5.1",

@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "coverage": "lab -r html -o coverage/index.html -r lcov -o coverage/lcov.info",
-    "lint": "mod-standard",
+    "lint": "standard -v",
     "pretest": "npm run lint",
     "test": "lab -cl",
     "postpublish": "greenkeeper-postpublish"
@@ -33,9 +33,9 @@
     "uuid": "2.0.3"
   },
   "devDependencies": {
-    "@modulus/standard": "0.5.1",
     "code": "1.5.0",
     "greenkeeper-postpublish": "1.0.1",
-    "lab": "6.2.0"
+    "lab": "6.2.0",
+    "standard": "8.5.0"
   }
 }

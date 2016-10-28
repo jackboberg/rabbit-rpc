@@ -1,32 +1,11 @@
 {
   "name": "@modulus/rabbit-rpc",
-  "version": "0.3.0",
   "description": "amqplib wrapper for easier rabbitmq scripting of RPC interface",
-  "main": "index.js",
-  "scripts": {
-    "coverage": "lab -r html -o coverage/index.html -r lcov -o coverage/lcov.info",
-    "lint": "standard -v",
-    "pretest": "npm run lint",
-    "test": "lab -cl",
-    "postpublish": "greenkeeper-postpublish"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/onmodulus/rabbit-rpc.git"
-  },
-  "keywords": [
-    "amqp",
-    "amqplib",
-    "rabbit",
-    "rabbitmq",
-    "rpc"
-  ],
+  "version": "0.3.0",
   "author": "Jack Boberg <jack.boberg@progress.com>",
-  "license": "MIT",
   "bugs": {
     "url": "https://github.com/onmodulus/rabbit-rpc/issues"
   },
-  "homepage": "https://github.com/onmodulus/rabbit-rpc#readme",
   "dependencies": {
     "@modulus/rabbit-channel": "1.0.0",
     "serialize-error": "2.0.0",
@@ -37,5 +16,26 @@
     "greenkeeper-postpublish": "1.0.1",
     "lab": "6.2.0",
     "standard": "8.5.0"
+  },
+  "homepage": "https://github.com/onmodulus/rabbit-rpc#readme",
+  "keywords": [
+    "amqp",
+    "amqplib",
+    "rabbit",
+    "rabbitmq",
+    "rpc"
+  ],
+  "license": "MIT",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/onmodulus/rabbit-rpc.git"
+  },
+  "scripts": {
+    "coverage": "lab -r html -o coverage/index.html -r lcov -o coverage/lcov.info",
+    "lint": "standard -v",
+    "postpublish": "greenkeeper-postpublish",
+    "pretest": "npm run lint",
+    "test": "lab -cl"
   }
 }

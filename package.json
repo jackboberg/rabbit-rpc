@@ -35,7 +35,7 @@
     "coverage": "lab -r html -o coverage/index.html -r lcov -o coverage/lcov.info",
     "lint": "standard -v",
     "postpublish": "greenkeeper-postpublish",
-    "pretest": "npm run lint",
-    "test": "lab -cl"
+    "test": "standard -v && lab -cl",
+    "unit": "lab -cl"
   }
 }

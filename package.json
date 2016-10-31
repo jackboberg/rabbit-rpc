@@ -17,6 +17,9 @@
     "lab": "6.2.0",
     "standard": "8.5.0"
   },
+  "engines": {
+    "node": ">=6"
+  },
   "homepage": "https://github.com/onmodulus/rabbit-rpc#readme",
   "keywords": [
     "amqp",

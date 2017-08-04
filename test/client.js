@@ -14,7 +14,7 @@ var it = lab.it
 var expect = Code.expect
 
 // eslint-disable-next-line no-process-env
-const AMQP_HREF = process.env.AMQP_HREF || 'amqp://user:password@localhost'
+const AMQP_HREF = process.env.AMQP_HREF || 'amqp://guest:guest@localhost'
 const QUEUE = 'rpc-queue-client-test'
 
 var rabbit, server

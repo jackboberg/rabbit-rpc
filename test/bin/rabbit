@@ -1,10 +1,7 @@
 #!/usr/bin/env bash
 
-docker run -d \
-  --hostname rabbit \
-  --name rabbit \
+docker run -d --rm \
   -p 5672:5672 \
-  -p 8080:15672 \
-  -e RABBITMQ_DEFAULT_USER=user \
-  -e RABBITMQ_DEFAULT_PASS=password \
+  -e RABBITMQ_DEFAULT_USER=guest \
+  -e RABBITMQ_DEFAULT_PASS=guest \
   rabbitmq:management

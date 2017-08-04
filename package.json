@@ -7,7 +7,7 @@
     "url": "https://github.com/jackboberg/rabbit-rpc/issues"
   },
   "dependencies": {
-    "@modulus/rabbit-channel": "1.0.0",
+    "@jackrabbit/channel": "^2.0.0",
     "serialize-error": "2.0.0",
     "uuid": "2.0.3"
   },

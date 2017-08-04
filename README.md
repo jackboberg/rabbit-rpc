@@ -2,6 +2,7 @@
 
 [![version](https://img.shields.io/npm/v/@jackrabbit/rpc.svg?style=flat-square)][version]
 [![build](https://img.shields.io/travis/jackboberg/rabbit-rpc/master.svg?style=flat-square)][build]
+[![standard][standard-image]][standard-url]
 [![license](https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square)](LICENSE.md)
 
 amqplib wrapper for easier rabbitmq scripting of RPC interface
@@ -49,3 +50,5 @@ RPC.server('rpc-queue', (msg, done) => {
 
 [version]: https://www.npmjs.com/package/@jackrabbit/rpc
 [build]: https://travis-ci.org/jackboberg/rabbit-rpc
+[standard-image]: https://img.shields.io/badge/code%20style-standard-brightgreen.svg?style=flat-square
+[standard-url]: http://npm.im/standard

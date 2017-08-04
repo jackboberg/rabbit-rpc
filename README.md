@@ -1,14 +1,14 @@
-## Rabbit-RPC
+## @jackrabbit/rpc
 
-[![version](https://img.shields.io/npm/v/@modulus/rabbit-rpc.svg?style=flat-square)][version]
-[![build](https://img.shields.io/travis/onmodulus/rabbit-rpc/master.svg?style=flat-square)][build]
-[![license](https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square)][license]
+[![version](https://img.shields.io/npm/v/@jackrabbit/rpc.svg?style=flat-square)][version]
+[![build](https://img.shields.io/travis/jackboberg/rabbit-rpc/master.svg?style=flat-square)][build]
+[![license](https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square)](LICENSE.md)
 
 amqplib wrapper for easier rabbitmq scripting of RPC interface
 
 ### Install
 
-`npm install @modulus/rabbit-rpc`
+`npm install @jackrabbit/rpc`
 
 ### Usage
 
@@ -47,6 +47,5 @@ RPC.server('rpc-queue', (msg, done) => {
 
 [amqplib]: http://www.squaremobius.net/amqp.node/channel_api.html#connect
 
-[version]: https://www.npmjs.com/package/@modulus/rabbit-rpc
-[build]: https://travis-ci.org/onmodulus/rabbit-rpc
-[license]: https://raw.githubusercontent.com/onmodulus/rabbit-rpc/master/LICENSE
+[version]: https://www.npmjs.com/package/@jackrabbit/rpc
+[build]: https://travis-ci.org/jackboberg/rabbit-rpc

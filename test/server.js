@@ -1,39 +1,33 @@
-const Code = require('code')
 const Lab = require('lab')
 const Sinon = require('sinon')
 const Util = require('util')
+const { expect } = require('code')
 
 const RabbitRPC = require('..')
 
-var lab = exports.lab = Lab.script()
-
-var before = lab.before
-var beforeEach = lab.beforeEach
-var describe = lab.describe
-var it = lab.it
-var expect = Code.expect
+const { before, beforeEach, describe, it } = exports.lab = Lab.script()
 
 // eslint-disable-next-line no-process-env
 const AMQP_HREF = process.env.AMQP_HREF || 'amqp://guest:guest@localhost'
 const QUEUE = 'rpc-queue-server-test'
 
-var rabbit, queue
+let rabbit, queue
 
-before(function (done) {
+before((done) => {
   rabbit = RabbitRPC(AMQP_HREF)
   done()
 })
 
-describe('RabbitRPC.server', function () {
-  it('exports a function', function (done) {
+describe('RabbitRPC.server', () => {
+  it('exports a function', (done) => {
     expect(rabbit.server).to.be.a.function()
     done()
   })
 
-  describe('when client sends a message', function () {
-    var message
+  describe('when client sends a message', () => {
+    let message
 
-    beforeEach(function (done) {
+    beforeEach((done) => {
       queue = Util.format('%s-message', QUEUE)
       message = { testMessage: true }
 
@@ -41,8 +35,8 @@ describe('RabbitRPC.server', function () {
       done()
     })
 
-    it('recieves the message', function (done) {
-      rabbit.server(queue, function (msg, cb) {
+    it('recieves the message', (done) => {
+      rabbit.server(queue, (msg, cb) => {
         expect(msg).to.equal(message)
         cb(null, {})
         done()
@@ -50,7 +44,7 @@ describe('RabbitRPC.server', function () {
     })
   })
 
-  it('supports setting capacity', { skip: true }, function (done) {
+  it('supports setting capacity', { skip: true }, (done) => {
     expect(true).to.be.false()
     done()
   })

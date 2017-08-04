@@ -1,25 +1,18 @@
-const Code = require('code')
 const Lab = require('lab')
 const Sinon = require('sinon')
+const { expect } = require('code')
 
 const RabbitRPC = require('..')
 
-var lab = exports.lab = Lab.script()
-
-var afterEach = lab.afterEach
-var before = lab.before
-var beforeEach = lab.beforeEach
-var describe = lab.describe
-var it = lab.it
-var expect = Code.expect
+const { afterEach, before, beforeEach, describe, it } = exports.lab = Lab.script()
 
 // eslint-disable-next-line no-process-env
 const AMQP_HREF = process.env.AMQP_HREF || 'amqp://guest:guest@localhost'
 const QUEUE = 'rpc-queue-client-test'
 
-var rabbit, server
+let rabbit, server
 
-before(function (done) {
+before((done) => {
   server = Sinon.stub()
   rabbit = RabbitRPC(AMQP_HREF)
 
@@ -27,29 +20,29 @@ before(function (done) {
   done()
 })
 
-describe('RabbitRPC.client', function () {
-  var msg, result
+describe('RabbitRPC.client', () => {
+  let msg, result
 
-  beforeEach(function (done) {
+  beforeEach((done) => {
     msg = { testMessage: true }
     result = { testResult: true }
     server.yields(null, result)
     done()
   })
 
-  afterEach(function (done) {
+  afterEach((done) => {
     server.reset()
     done()
   })
 
-  it('exports a function', function (done) {
+  it('exports a function', (done) => {
     expect(rabbit.client).to.be.a.function()
     done()
   })
 
-  describe('when a server yields a result', function () {
-    it('yields result', function (done) {
-      rabbit.client(QUEUE, msg, function (err, res) {
+  describe('when a server yields a result', () => {
+    it('yields result', (done) => {
+      rabbit.client(QUEUE, msg, (err, res) => {
         expect(err).to.not.exist()
         expect(res).to.equal(result)
         done()
@@ -57,17 +50,17 @@ describe('RabbitRPC.client', function () {
     })
   })
 
-  describe('when a server yields an error', function () {
-    var error
+  describe('when a server yields an error', () => {
+    let error
 
-    beforeEach(function (done) {
+    beforeEach((done) => {
       error = new Error('RPC.server Error')
       server.yields(error)
       done()
     })
 
-    it('yields an error', function (done) {
-      rabbit.client(QUEUE, msg, function (err, res) {
+    it('yields an error', (done) => {
+      rabbit.client(QUEUE, msg, (err, res) => {
         expect(err).to.exist()
         expect(err.message).to.equal(error.message)
         expect(res).to.not.exist()

@@ -12,10 +12,10 @@
     "uuid": "^3.1.0"
   },
   "devDependencies": {
-    "@modulus/standard": "0.5.1",
     "code": "^4.1.0",
     "greenkeeper-postpublish": "1.0.1",
-    "lab": "^14.1.1"
+    "lab": "^14.1.1",
+    "standard": "^10.0.2"
   },
   "homepage": "https://github.com/jackboberg/rabbit-rpc#readme",
   "keywords": [
@@ -33,7 +33,7 @@
   },
   "scripts": {
     "coverage": "lab -r html -o coverage/index.html -r lcov -o coverage/lcov.info",
-    "lint": "mod-standard",
+    "lint": "standard -v",
     "postpublish": "greenkeeper-postpublish",
     "pretest": "npm run lint",
     "test": "lab -cl"

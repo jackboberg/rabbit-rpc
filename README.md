@@ -1,5 +1,7 @@
 # @jackrabbit/rpc
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/jackboberg/rabbit-rpc.svg)](https://greenkeeper.io/)
+
 [![npm][npm-image]][npm-url]
 [![travis][travis-image]][travis-url]
 [![standard][standard-image]][standard-url]

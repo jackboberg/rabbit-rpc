@@ -60,7 +60,7 @@ npm t
 
 [npm-image]: https://img.shields.io/npm/v/@jackrabbit/rpc.svg?style=flat-square
 [npm-url]: https://www.npmjs.com/package/@jackrabbit/rpc
-[travis-image]: https://img.shields.io/travis/jackboberg/rabbit-rpc.svg?style=flat-square
+[travis-image]: https://img.shields.io/travis/jackboberg/rabbit-rpc/master.svg?style=flat-square
 [travis-url]: https://travis-ci.org/jackboberg/rabbit-rpc
 [standard-image]: https://img.shields.io/badge/code%20style-standard-brightgreen.svg?style=flat-square
 [standard-url]: http://npm.im/standard

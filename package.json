@@ -15,7 +15,7 @@
     "code": "^4.1.0",
     "greenkeeper-postpublish": "^1.3.0",
     "lab": "^14.1.1",
-    "sinon": "^3.0.0",
+    "sinon": "^4.0.2",
     "standard": "^10.0.2"
   },
   "homepage": "https://github.com/jackboberg/rabbit-rpc#readme",

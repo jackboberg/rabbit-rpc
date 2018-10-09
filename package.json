@@ -8,7 +8,7 @@
   },
   "dependencies": {
     "@jackrabbit/channel": "^2.0.0",
-    "serialize-error": "^2.1.0",
+    "serialize-error": "^3.0.0",
     "uuid": "^3.1.0"
   },
   "devDependencies": {
